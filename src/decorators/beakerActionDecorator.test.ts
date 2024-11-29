@@ -1,8 +1,8 @@
 import type { IBeaker } from '../types';
 import { beakerActionDecorator } from './beakerActionDecorator';
 
-describe("beakerActionDecorator() tests", () => {
-  test("decorator passes arguments correctly to target function", () => {
+describe('beakerActionDecorator() tests', () => {
+  test('decorator passes arguments correctly to target function', () => {
     const target = jest.fn();
     const fakeBeaker = {
       commit: jest.fn()
@@ -15,7 +15,7 @@ describe("beakerActionDecorator() tests", () => {
     expect(fakeBeaker.commit).toHaveBeenCalledTimes(2);
   });
 
-  test("decorator returns the same returned value of action", () => {
+  test('decorator returns the same returned value of action', () => {
     const expectedReturn = {};
     const target = jest.fn().mockReturnValue(expectedReturn);
     const fakeBeaker = {
@@ -28,7 +28,7 @@ describe("beakerActionDecorator() tests", () => {
     expect(result).toBe(expectedReturn);
   });
 
-  test("decorator returns the same promise value as action and commits after promise resolves", async () => {
+  test('decorator returns the same promise value as action and commits after promise resolves', async () => {
     const expectedResolve = {};
     const target = jest.fn(async () => expectedResolve);
     const fakeBeaker = {
@@ -47,7 +47,7 @@ describe("beakerActionDecorator() tests", () => {
     expect(fakeBeaker.commit).toHaveBeenCalledTimes(3);
   });
 
-  test("decorator throws when action throws", () => {
+  test('decorator throws when action throws', () => {
     const target = jest.fn(() => {
       throw new Error();
     });

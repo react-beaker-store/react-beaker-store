@@ -5,8 +5,8 @@ import { render, renderHook, screen, waitFor } from '@testing-library/react'
 import { createBeaker } from '../factories/createBeaker';
 import { useBeakerState } from './useBeakerState';
 
-describe("useBeakerState() tests", () => {
-  test("returns beaker state", () => {
+describe('useBeakerState() tests', () => {
+  test('returns beaker state', () => {
     const beaker = createBeaker({
       state: {
         counter: 0
@@ -21,7 +21,7 @@ describe("useBeakerState() tests", () => {
     expect(result.current).toBe(beaker.state);
   });
 
-  test("changes component as expected", async () => {
+  test('changes component as expected', async () => {
     const beaker = createBeaker({
       state: {
         counter: 0
@@ -45,7 +45,7 @@ describe("useBeakerState() tests", () => {
     expect(btn.textContent).toBe('1');
   });
 
-  test("async changes update component as expected", async () => {
+  test('async changes update component as expected', async () => {
     const beaker = createBeaker({
       state: {
         loading: false,
@@ -57,7 +57,7 @@ describe("useBeakerState() tests", () => {
           try {
             this.state.loading = true;
             await new Promise((r) => setTimeout(r, 1000));
-            this.state.result = "Complete";
+            this.state.result = 'Complete';
           } catch (error) {
             if (error instanceof Error) {
               this.state.error = error as Error;
@@ -101,7 +101,7 @@ describe("useBeakerState() tests", () => {
   });
 
 
-  test("async changes update component as expected even when errors occur", async () => {
+  test('async changes update component as expected even when errors occur', async () => {
     const beaker = createBeaker({
       state: {
         loading: false,
@@ -113,7 +113,7 @@ describe("useBeakerState() tests", () => {
           try {
             this.state.loading = true;
             await new Promise((r) => setTimeout(r, 1000));
-            throw new Error("Unable to complete operation")
+            throw new Error('Unable to complete operation')
           } catch (error) {
             if (error instanceof Error) {
               this.state.error = error as Error;

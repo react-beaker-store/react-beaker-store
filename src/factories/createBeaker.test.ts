@@ -1,7 +1,7 @@
 import { createBeaker } from './createBeaker';
 
-describe("createBeaker() tests", () => {
-  test("createBeaker() does not throw", () => {
+describe('createBeaker() tests', () => {
+  test('createBeaker() does not throw', () => {
     expect(() => {
       createBeaker({
         state: {},
@@ -10,7 +10,7 @@ describe("createBeaker() tests", () => {
     }).not.toThrow();
   });
 
-  test("createBeaker() won't return null or undefined", () => {
+  test('createBeaker() wont return null or undefined', () => {
     const beaker = createBeaker({
       state: {},
       actions: {}
