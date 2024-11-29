@@ -1,11 +1,9 @@
-<div style="text-align:center; margin-bottom: 35px;">
-  <div>
+<div align="center">
   <img width="180" alt="React Beaker Store icon" src="https://raw.githubusercontent.com/react-beaker-store/react-beaker-store/refs/heads/main/beaker.png"/>
-  </div>
+</div>
 
-   <div>
-    <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.0-blue"/>
-   </div>
+<div align="center">
+  <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.0-blue"/>
 </div>
 
 # React Beaker Store
