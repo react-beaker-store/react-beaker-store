@@ -3,7 +3,9 @@
 </div>
 
 <div align="center">
-  <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.0-blue"/>
+  <a href="https://www.npmjs.com/package/react-beaker-store" target="_blank" rel="noopener noreferrer">
+    <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.0-blue"/>
+  </a>
 </div>
 
 # React Beaker Store

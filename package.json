@@ -10,6 +10,14 @@
     "typescript",
     "flux"
   ],
+  "icon": "./beaker.png",
+  "readme": "./README.md",
+  "repository": {
+    "url": "https://github.com/react-beaker-store/react-beaker-store"
+  },
+  "bugs": {
+    "url": "https://github.com/react-beaker-store/react-beaker-store/issues"
+  },
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
