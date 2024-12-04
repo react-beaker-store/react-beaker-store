@@ -1,6 +1,6 @@
 {
   "name": "react-beaker-store",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Intuitive and reactive state management library for React apps",
   "keywords": [
     "react",
@@ -22,17 +22,17 @@
   "files": [
     "./dist"
   ],
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/react-beaker-store.mjs",
-  "types": "./dist/react-beaker-store.d.ts",
-  "jsnext:main": "./dist/react-beaker-store.mjs",
-  "react-native": "./dist/react-beaker-store.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "jsnext:main": "./dist/index.mjs",
+  "react-native": "./dist/index.mjs",
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/react-beaker-store.mjs",
-      "types": "./dist/react-beaker-store.d.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
