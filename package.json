@@ -1,6 +1,6 @@
 {
   "name": "react-beaker-store",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Intuitive and reactive state management library for React apps",
   "keywords": [
     "react",
@@ -19,9 +19,22 @@
     "url": "https://github.com/react-beaker-store/react-beaker-store/issues"
   },
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/react-beaker-store.mjs",
+  "types": "./dist/react-beaker-store.d.ts",
+  "jsnext:main": "./dist/react-beaker-store.mjs",
+  "react-native": "./dist/react-beaker-store.mjs",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/react-beaker-store.mjs",
+      "types": "./dist/react-beaker-store.d.ts"
+    }
+  },
   "scripts": {
     "start": "cross-env NODE_NO_WARNINGS=1 rollup -c --bundleConfigAsCjs",
     "test": "cross-env NODE_NO_WARNINGS=1 jest"

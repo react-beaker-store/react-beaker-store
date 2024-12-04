@@ -4,8 +4,10 @@
 
 <div align="center">
   <a href="https://www.npmjs.com/package/react-beaker-store" target="_blank" rel="noopener noreferrer">
-    <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.0-blue"/>
+    <img alt="npm" src="https://img.shields.io/badge/npm-v0.1.1-5c5c5c?logo=npm&labelColor=d40100"/>
   </a>
+  <img alt="npm" src="https://img.shields.io/badge/tests-passing-29aa47?logo=jest"/>
+  <img alt="npm" src="https://img.shields.io/badge/coverage-97%25-29aa47?logo=jest"/>
 </div>
 
 # React Beaker Store

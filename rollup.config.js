@@ -7,19 +7,20 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 const packageJson = require("./package.json");
 
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 export default [
   {
-    input: "src/index.ts",
+    input: "./src/index.ts",
     output: [
       {
         file: packageJson.main,
-        format: "cjs",
-        sourcemap: true,
+        sourcemap: true
       },
       {
         file: packageJson.module,
-        format: "esm",
-        sourcemap: true,
+        sourcemap: true
       },
     ],
     plugins: [
@@ -32,8 +33,8 @@ export default [
     external: ["react", "react-dom"],
   },
   {
-    input: "src/index.ts",
-    output: [{ file: "dist/types.d.ts", format: "es" }],
+    input: "./src/index.ts",
+    output: [{ file: packageJson.types, format: "es" }],
     plugins: [dts.default()],
   },
 ];
